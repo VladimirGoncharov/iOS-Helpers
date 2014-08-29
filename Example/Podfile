@@ -1,0 +1,7 @@
+
+target 'Helpers', :exclusive => true do
+  pod "Helpers", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
