@@ -1,0 +1,20 @@
+PODS:
+  - Expecta (0.3.1)
+  - Helpers (0.1.0)
+  - Specta (0.2.1)
+
+DEPENDENCIES:
+  - Expecta
+  - Helpers (from `../`)
+  - Specta (~> 0.2.1)
+
+EXTERNAL SOURCES:
+  Helpers:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  Helpers: 03016766a65079d5244e4577c1dedcea432be5f3
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+
+COCOAPODS: 0.33.1
