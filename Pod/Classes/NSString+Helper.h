@@ -10,6 +10,7 @@
 
 @interface NSString (Helper)
 
+- (NSString *)trimWhitespace;
 - (NSString *)percentEscape;
 - (NSDate *)dateFromStringWithFormat:(NSString *)format;
 - (NSDate *)dateWithFormat:(NSString *)format;

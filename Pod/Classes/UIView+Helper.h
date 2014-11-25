@@ -11,5 +11,6 @@
 @interface UIView (Helper)
 
 - (UIImage *)image;
+- (UITableViewCell *)cell;
 
 @end

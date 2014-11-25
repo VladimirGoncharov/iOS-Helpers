@@ -10,6 +10,12 @@
 
 @implementation NSString (Helper)
 
+- (NSString *)trimWhitespace
+{
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+}
+
+
 - (NSString *)percentEscape
 {
     return [NSString urlEncodeValue:self];

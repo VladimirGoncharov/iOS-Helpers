@@ -61,7 +61,7 @@
 
 - (void)setTop:(CGFloat)top
 {
-    CGFloat bottom = bottom;
+    CGFloat bottom = self.bottom;
     self.y = top;
     self.bottom = bottom;
 }

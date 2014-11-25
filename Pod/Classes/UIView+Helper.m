@@ -22,4 +22,16 @@
     return img;
 }
 
+- (UITableViewCell *)cell
+{
+    UIView *view = self.superview;
+    while(view){
+        if([view isKindOfClass:[UITableViewCell class]])
+            return (UITableViewCell *)view;
+        view = view.superview;
+    }
+    return nil;
+}
+
+
 @end
