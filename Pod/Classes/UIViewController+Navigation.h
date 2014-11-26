@@ -11,5 +11,6 @@
 @interface UIViewController (Navigation)
 
 - (UINavigationController *)embedInNavigationVC;
+- (UINavigationController *)embedInNavigationVCWithTabImageName:(NSString *)imageName;
 
 @end

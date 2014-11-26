@@ -28,4 +28,11 @@
     return navigationVC;
 }
 
+- (UINavigationController *)embedInNavigationVCWithTabImageName:(NSString *)imageName
+{
+    UINavigationController *navVC = [self embedInNavigationVC];
+    navVC.tabBarItem.image = [UIImage imageNamed:imageName];
+    return navVC;
+}
+
 @end

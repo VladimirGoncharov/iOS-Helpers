@@ -13,6 +13,7 @@ typedef id (^deserialize)(NSDictionary *dictionary);
 @interface NSObject (Serialization)
 
 // Serialization
++ (instancetype)object;
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 - (void)setWithDictionary:(NSDictionary *)dictionary;
 + (NSArray *)listFromDictionaries:(NSArray *)dictionaries;
