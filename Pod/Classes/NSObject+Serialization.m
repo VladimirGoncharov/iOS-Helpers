@@ -39,6 +39,14 @@
         NSString* propertyAttributes = [NSString stringWithUTF8String:property_getAttributes(properties[i])];
         NSArray* splitPropertyAttributes = [propertyAttributes componentsSeparatedByString:@"\""];
         if ([splitPropertyAttributes count] >= 2) {
+            
+            if([splitPropertyAttributes count] >= 3){
+                NSArray *propAttrs = [[splitPropertyAttributes objectAtIndex:2] componentsSeparatedByString:@","];
+                // Skip read only properties
+                if([propAttrs containsObject:@"R"])
+                    continue;
+            }
+            
             id value = [dictionary objectForKey:key];
             
             NSString *classNameStr = [splitPropertyAttributes objectAtIndex:1];
